@@ -13,13 +13,18 @@
       src:url("https://use.typekit.net/af/85e04c/00000000000000007735b6b8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/85e04c/00000000000000007735b6b8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/85e04c/00000000000000007735b6b8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
       font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
       }
-      /*@media all and (max-width: 1080px) {*/
-      @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+      @font-face {
+      font-family:"bc-novatica-cyr";
+      src:url("https://use.typekit.net/af/788233/00000000000000007735b6c8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/788233/00000000000000007735b6c8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/788233/00000000000000007735b6c8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+      }
+      @media all and (max-width: 1080px) {
+      /*@media only screen and (-webkit-min-device-pixel-ratio: 3) {*/
         p {
           font-family: inter, sans-serif;
           font-style: normal;
           /*font-weight: 300;*/
-          font-size: 12px;
+          font-size: 30px;
         }
         .txt1 {
           position: absolute;
@@ -27,13 +32,13 @@
           right: 30px;
         }
         .txt2 {
-          position: absolute;
-          top: 90px;
+          position: fixed;
+          top: 140px;
           left: 80px;
         }
         .txt3 {
-          position: absolute;
-          top: 130px;
+          position: fixed;
+          top: 200px;
           right: 90px;
         }
         .lts {
@@ -42,25 +47,34 @@
         }
         .mrg {
           position: absolute;
-          top: 490px;
-          left: -50px;
+          top: 1030px;
+          left: -130px;
           transform: rotate(90deg);
           z-index: -1;
         }
         h1 {
           font: @import url("https://use.typekit.net/cdy6qvg.css");
           font-family: bc-novatica-cyr, sans-serif;
-          font-weight: 500;
+          font-weight: 300;
           font-style: normal;
-          font-size: 130px;
-          line-height: 120px;
+          font-size: 272px;
+        }
+        h2 {
+          font: @import url("https://use.typekit.net/cdy6qvg.css");
+          font-family: bc-novatica-cyr, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 100px;
         }
         .me {
           position: absolute;
-          left: 90px;
-          top: 130px;
-          width: 100px;
+          left: 180px;
+          top: 340px;
+          width: 250px;
           z-index: -2;
+        }
+        .education {
+          margin-top: 300px;
         }
       }
 
@@ -74,5 +88,15 @@
       <p class="txt3">+368 040 815 38 36</p>
       <img src="images/lts-mobile.png" alt="" class="lts">
       <img src="images/me.jpg" alt="" class="me">
+
+      <div class="education">
+        <h2>EDUCATION</h2>
+        <p>2020 - NOW_Graphic Design and Programming, Bachelor at the Design School of the Higher School of Economics, Moscow</p>
+        <p>2019 - 2020_Preparatory Program for foreign students, at the Higher School of Economics, Moscow</p>
+        <p>2018 - 2019_Internship year at the ENSAAMA, Paris</p>
+        <p>2016 - 2018_French bachelor of Product Design, at the ENSAAMA, Paris</p>
+        <p>2015 - 2016_Preparatory year in applied arts, at the ENSAAMA, Paris</p>
+        <p>2012 - 2015_High School at the French Lycée of Seoul, South Korea</p>
+      </div>
   </body>
 </html>
