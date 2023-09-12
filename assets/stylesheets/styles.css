@@ -1,0 +1,149 @@
+@font-face {
+  font-family: NHU;
+  src: url('../fonts/NeueHaasUnica-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  /* overflow: hidden; */
+  /* overflow-x: visible; */
+}
+
+h1 {
+  font-family: bc-novatica-cyr, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+h2 {
+  font-family: bc-novatica-cyr, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: bc-novatica-cyr, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+}
+
+p {
+  font-family: NHU;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* width: 200vw; */
+  height: 100vh;
+  overflow-y: hidden;
+  
+  .page1 {
+    
+    .cov {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+
+      .name-script {
+        position: absolute;
+        /* z-index: -1; */
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+      }
+
+      .txt-infos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        .contact-infos {
+          position: relative;
+          display: flex;
+          flex-direction: row-reverse;
+          margin: 16px 16px 0px 16px;
+      
+          .txt {
+            right: 0;
+            line-height: 12px;
+          }
+        }
+        .name-grotesk {
+          height: 100%;
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          margin-right: 60px;
+        }
+        .name-grotesk h1 {
+          writing-mode: vertical-lr;
+        }
+      }
+    }
+
+    /* .a {
+      display: block;
+    } */
+
+    .b {
+      display: none;
+    }
+  }
+
+  .page2 {
+
+    .infos {
+      width: 100vw;
+      height: 100vh;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      overflow: scroll;
+
+      .header {
+        background-color: grey;
+      }
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .competences {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          .competence {
+            display: flex;
+            flex-direction: row;
+            gap: 22px;
+            & p {
+              width: 120px;
+            }
+          }
+        }
+        .marge {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+

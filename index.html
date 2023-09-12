@@ -2,197 +2,185 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-
-    <link href="https://allfont.net/allfont.css?fonts=alexandra-script" rel="stylesheet" type="text/css" />
-
-    <title>Marguerite L.</title>
-    <style media="screen">
-      * {
-        box-sizing: border-box;
-        margin: 0;
-      }
-      @font-face {
-      font-family:"bc-novatica-cyr";
-      src:url("https://use.typekit.net/af/85e04c/00000000000000007735b6b8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/85e04c/00000000000000007735b6b8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/85e04c/00000000000000007735b6b8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
-      font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
-      }
-      @font-face {
-      font-family:"bc-novatica-cyr";
-      src:url("https://use.typekit.net/af/788233/00000000000000007735b6c8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/788233/00000000000000007735b6c8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/788233/00000000000000007735b6c8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-      font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
-      }
-      @media all and (max-width: 1080px) {
-      /*@media only screen and (-webkit-min-device-pixel-ratio: 3) {*/
-        p {
-          font-family: inter, sans-serif;
-          font-style: normal;
-          /*font-weight: 300;*/
-          font-size: 30px;
-        }
-        .txt1 {
-          position: absolute;
-          top: 30px;
-          right: 30px;
-        }
-        .txt2 {
-          position: fixed;
-          top: 50px;
-          left: 80px;
-        }
-        .txt3 {
-          position: fixed;
-          top: 100px;
-          right: 90px;
-        }
-        .lts {
-          /*width: 100vw;*/
-          width: 100%;
-        }
-        .mrg {
-          position: absolute;
-          top: 1030px;
-          left: -130px;
-          transform: rotate(90deg);
-          z-index: -1;
-        }
-        h1 {
-          font: @import url("https://use.typekit.net/cdy6qvg.css");
-          font-family: bc-novatica-cyr, sans-serif;
-          font-weight: 300;
-          font-style: normal;
-          font-size: 272px;
-        }
-        h2 {
-          font: @import url("https://use.typekit.net/cdy6qvg.css");
-          font-family: bc-novatica-cyr, sans-serif;
-          font-weight: 400;
-          font-style: normal;
-          font-size: 150px;
-        }
-        .me {
-          position: absolute;
-          left: 230px;
-          top: 330px;
-          width: 250px;
-          z-index: -2;
-        }
-        span {
-          font-family: 'Alexandra Script', arial;
-          font-size: 60px;
-          position: absolute;
-          top: 800px;
-          left: 360px;
-          transform: rotate(90deg);
-          line-height: 50px;
-        }
-        .education {
-          margin-top: 300px;
-          margin-bottom: 200px;
-        }
-        div > p {
-          margin-bottom: 30px;
-          margin-left: 10px;
-          margin-right: 10px;
-        }
-        .experiences {
-          margin-bottom: 200px;
-        }
-        .languages {
-          margin-bottom: 200px;
-        }
-        .about {
-          margin-bottom: 150px;
-        }
-        .carousel {
-          overflow: auto;
-          display: flex;
-          scroll-snap-type: x mandatory;
-          scroll-padding: 0 24px;
-        }
-        .item {
-          height: 900px;
-          width: 900px;
-          margin-right: 10px;
-          flex-shrink: 0;
-          scroll-snap-align: start;
-          background-size: 100%;
-        }
-        #img1 {
-          background-image: url(images/b-goldblue3.jpg);
-        }
-        #img2 {
-          background-image: url(images/blackchrome.jpg);
-        }
-        #img3 {
-          background-image: url(images/blueyellow-closeup4.jpg);
-        }
-      }
-
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Marguerite L.</title>
+    <link rel="stylesheet" href="https://use.typekit.net/cdy6qvg.css">
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    <link rel="stylesheet" href="assets/stylesheets/reset.css">
   </head>
 
   <body>
-      <h1 class="mrg">MARGUERITE</h1>
-      <!-- <p class="txt1">Multi Fully Full Stack Designer... to come, <br> ou tout comme, ça passe aussi.</p> -->
-      <p class="txt2">marguerite.lorthiois@outlook.fr</p>
-      <p class="txt3">+368 040 815 38 36</p>
-      <img src="images/lts-mobile.png" alt="" class="lts">
-      <img src="images/me.jpg" alt="" class="me">
-      <!-- <span>Towards Something<br>Raw But Natural</span> -->
-
-      <div class="education">
-        <h2>EDUCATION</h2>
-        <p>2020 - now_<strong>Graphic Design and Programming</strong>, Bachelor at the Design School of the Higher School of Economics, Moscow</p>
-        <p>2019 - 2020_Preparatory Program for foreign students, at the Higher School of Economics, Moscow</p>
-        <p>2018 - 2019_Internship year at the ENSAAMA, Paris</p>
-        <p>2016 - 2018_<strong>Product Design</strong>, French bachelor at the ENSAAMA, Paris</p>
-        <p>2015 - 2016_Preparatory year in applied arts, at the ENSAAMA, Paris</p>
-        <p>2012 - 2015_High School at the French Lycée of Seoul, South Korea</p>
-      </div>
-      <div class="experiences">
-        <h2>EXPERIENCES</h2>
-        <p>2021 - now_I design <strong>logos</strong>and <strong>websites</strong><br>
-          2019_I did an internship as a <strong>Digital Designer</strong> at <strong>Senscritique</strong>, Paris<br>
-          2017_I did an internship as a <strong>Product Designer</strong> at <strong>Fineobjects</strong>, Moscow</p>
-        <p>2018_I was a sales woman in a small retail store in Paris<br> 2016 - 2019_I did volunteer work for music festivals in Paris</p>
-      </div>
-      <div class="languages">
-        <h2>LANGUAGES</h2>
-        <p>French : Native<br>
-          English: Fluent<br>
-          Russian : Fluent<br>
-          Spanish: A1</p>
-      </div>
-      <div class="about">
-        <h2 style="margin-left: 10px;">ABOUT ME</h2>
-        <p>I try to be always <strong>positive and rational</strong>. However I am scared for our future and I dream of utopias.<br>
-          I believe the capitalist system should retire.<br>
-          I would love to see all of us finally stop hating and hurting, that is why I am <strong>searching for solutions . . .</strong></p>
-        <p>My flaws are that I am impatient and care too much about details.<br> <strong>My qualities</strong> are that I am open minded, I know how to adapt, I am serious and enthusiastic.</p>
-      </div>
-
-      <div class="carousel">
-        <div class="item" id="img1">
-          <!-- <img src="images/b-goldblue3.jpg" alt=""> -->
+    <div class="container">
+      <!-- COVER -->
+      <div class="page1">
+        <div class="cov">
+          <img src="assets/images/lts-mobile1.svg" alt="surname script" class="name-script">
+          <div class="txt-infos">
+            <div class="contact-infos">
+              <p class="txt">
+                25 ans, Française<br>
+                22.12.1997<br>
+                marguerite.lorthiois@outlook.fr<br>
+                +33 7 85 54 51 05<br>
+                43 rue du Cherche-Midi, 75006, Paris<br>
+              </p>
+            </div>
+            <div class="name-grotesk">
+              <h1>MARGUERITE</h1>
+            </div>
+          </div>
         </div>
-        <div class="item" id="img2">
-          <!-- <img src="images/blackchrome.jpg" alt=""> -->
-        </div>
-        <div class="item" id="img3">
-          <!-- <img src="images/blueyellow-closeup4.jpg" alt=""> -->
+
+        <div class="cov b">
+          <div class="name-grotesk">
+            <h1>LORTHIOIS</h1>
+          </div>
         </div>
       </div>
+      
+      <!-- INFOS -->
+      <div class="page2">
+        <div class="infos">
+          <div class="header">
+            <h3>INFORMATIONS</h3>
+            <!-- toggle translate -->
+          </div>
+          <div class="section">
+            <h2>EDUCATION</h2>
+            <p>
+              2020 - Aujourd’hui
+              Bachelor Design Graphique et Programmation,
+              à la faculté de Design de la Higher School of Economics, Moscou
+            </p>
+            <p>
+              2019 - 2020
+              Année de préparation en russe pour étudiants étrangers,
+              à la Higher School of Economics, Moscou
+            </p>
+            <p>
+              2018 - 2019
+              Année de stage en Design,
+              à l’ENSAAMA, Paris
+            </p>
+            <p>
+              2016 - 2018
+              BTS Design Produit,
+              à l’ENSAAMA, Paris
+            </p>
+            <p>
+              2015 - 2016
+              MANAA,
+              à l’ENSAAMA, Paris
+            </p>
+            <p>
+              2012 - 2015
+              Lycée Français de Séoul (Bac S),
+              Corée du Sud
+            </p>
+          </div>
+          <div class="section">
+            <h2>EXPERIENCES</h2>
+            <p>
+              2021 - Aujourd’hui
+              Design de logos et sitewebs
+            </p>
+            <p>
+              2018 - 2019
+              Stage de Design UX/UI chez Senscritique, Paris
+            </p>
+            <p>
+              2017
+              Stage de Design Produit chez Fineobjects, Moscou
+            </p>
+            <p>
+              2018
+              Vendeuse chez La Petite Mendigote, Paris 17e
+            </p>
+            <p>
+              2016 - Aujourd’hui
+              Bénévole pour différents événements de musique, Paris
+            </p>
+            <p>
+              Divers
+              Babysitting, Aide aux devoirs
+            </p>
+          </div>
+          <div class="section">
+            <h2>COMPETENCES</h2>
+            <div class="competences marge">
+              <div class="competence">
+                <p>Adobe Photoshop</p>
+                <img src="assets/images/photoshop.svg" alt="competence photoshop">
+              </div>
+              <div class="competence">
+                <p>Adobe Illustrator</p>
+                <img src="assets/images/illustrator.svg" alt="competence illustrator">
+              </div>
+              <div class="competence">
+                <p>Adobe Indesign</p>
+                <img src="assets/images/indesign.svg" alt="competence indesign">
+              </div>
+              <div class="competence">
+                <p>Adobe After Effects</p>
+                <img src="assets/images/aftereffects.svg" alt="competence aftereffects">
+              </div>
+              <div class="competence">
+                <p>Figma</p>
+                <img src="assets/images/figma.svg" alt="competence figma">
+              </div>
+              <div class="competence">
+                <p>Word & Excel</p>
+                <img src="assets/images/word.svg" alt="competence word">
+              </div>
+            </div>
+            <div class="competences">
+              <div class="competence">
+                <p>Web & Mobile Design</p>
+                <img src="assets/images/webdesign.svg" alt="competence webdesign">
+              </div>
+              <div class="competence">
+                <p>Coding</p>
+                <img src="assets/images/coding.svg" alt="competence coding">
+              </div>
+              <div class="competence">
+                <p>Branding</p>
+                <img src="assets/images/branding.svg" alt="competence branding">
+              </div>
+              <div class="competence">
+                <p>3D</p>
+                <img src="assets/images/3d.svg" alt="competence 3d">
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <h2>LANGUES</h2>
+            <p>
+              Français : langue maternelle
+              Anglais : courant
+              Russe : courant
+              Espagnol : notion de base
+            </p>
+          </div>
+          <div class="section">
+            <h2>SOFT SKILLS</h2>
+            <p>
+              Travaille d’equipe & autonomie
+              Enthousiasme & creativité
+              Rigeur & curiosité
+            </p>
+          </div>
+          <div class="section">
+            <h2>INTERETS</h2>
+            <p>
+              Sports (Taekwondo - ceinture noire, golf, sports nautiques)
+              Voyages (Europe, Russie, Asie du Sud-Est, Etats-Unis)
+              Arts (dessin, peinture, VJing, Generative art, piano, expositions)
+              Lecture (Art et Design, Ecologie, Capitalisme, Fantastique, Science-fiction)
+            </p>
+          </div>
+        </div>
 
-      <!-- <ul class="carousel">
-        <li class="item">
-        </li>
-        <li class="item">
-        </li>
-        <li class="item">
-        </li>
-      </ul> -->
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+      </div>
+    </div>
   </body>
 </html>
