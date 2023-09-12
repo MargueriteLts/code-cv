@@ -93,14 +93,14 @@ p {
         .name-grotesk h1 {
           writing-mode: vertical-lr;
         }
+        .left {
+          flex-direction: row;
+          margin-left: 60px;
+        }
       }
     }
 
-    /* .a {
-      display: block;
-    } */
-
-    .b {
+    .hide {
       display: none;
     }
   }
