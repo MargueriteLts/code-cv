@@ -1,0 +1,23 @@
+/* .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background: var(--black);
+          } */
+      
+          /* margin-bottom: 2vh; */
+          /* display: inline-block; */
+          /* padding: 6px; */
+          /* border-radius: 15px; */
+          /* background: #E6EBF4; */
+          /* box-shadow: 10px 10px 15px #E6EBF4, -10px -10px 15px white; */
+          /* box-shadow: 10px 10px 15px #E6EBF4; */
+
+          /* en dessous de 912 mobile ma page 2 depasse */
+          /* en dessous de 280 mobile ma page 2 depasse */
+          /* 360 good */
+          /* -> il faut changer la font-size en rem ou em MAIS PAS PIXELS */
+          /* from width 1024 -> page 2 faire plus petit !! */
+
+          /* 1) cover mobile */
+          /* 2) typo REM */
