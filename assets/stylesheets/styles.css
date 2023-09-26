@@ -209,9 +209,221 @@ h4,
   }
 }
 
+/* //////////////////////////////////////////////////////////////// */
+
+@media (width <= 360px) {
+  .comp {
+    display: none;
+  }
+
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .page1 {
+
+    .cov-mobile {
+
+      .infos-mobile {
+        display: flex;
+        width: 100%;
+
+        .txt {
+          padding: 16px 16px 0 16px;
+        }
+      }
+
+      #txt1-m {
+        justify-content: flex-end;
+      }
+
+      #txt2-m {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 8px;
+        justify-content: space-between;
+        align-items: center;
+
+        & div {
+          flex-grow: 1;
+          max-width: 30%;
+        }
+
+        .cv {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          align-items: center;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  .page2 {
+
+    .infos {
+      width: 100vw;
+      height: 100vh;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      overflow: scroll;
+
+      .sections {
+        display: flex;
+        flex-direction: column;
+        gap: 88px;
+        margin-bottom: 44px;
+
+        .subsection {
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 45%;
+          gap: 16px;
+          border-left: solid var(--black);
+          padding-left: 2vw;
+
+          .content {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex: 1 1 0px;
+
+            .time {
+              color: var(--white);
+              background: var(--black);
+              padding: 6px 12px 8px 12px;
+              border-radius: 16px;
+              display: inline-block;
+              /* flex: 1 1 0px; */
+            }
+
+            & span {
+              flex: 1 1 0px;
+            }
+          }
+
+          .competences {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 0px;
+            gap: 10px;
+            padding-right: 2vw;
+
+            .competence {
+              display: flex;
+              flex-direction: row;
+              gap: 8px;
+              align-items: center;
+              flex: 1 1 0px;
+
+              & h2 {
+                width: 165px;
+              }
+
+              & img {
+                flex: 1 1 0;
+              }
+            }
+          }
+
+          .marge {
+            margin-bottom: 24px;
+          }
+        }
+
+        .subsection:nth-child(4) {
+          & span {
+            display: flex;
+            flex-direction: row;
+            flex: 0 1 0px;
+            align-items: flex-end;
+            gap: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 8px;
+    z-index: 2;
+    background: var(--white);
+    overflow: scroll;
+  }
+
+  .page3 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .cards-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-end;
+        gap: 4px;
+        width: 100%;
+
+        .img-card {
+          width: 100%;
+          border-radius: 10px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          display: inline-block;
+          aspect-ratio: 1/1;
+        }
+
+        .txt-card {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 8px 4px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 /* /////////////////mobile to finish - vertical names////////////////// */
 
-@media (width <= 600px) {
+@media (360 < width <= 600px) {
   .comp {
     display: none;
   }
