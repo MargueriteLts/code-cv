@@ -1138,6 +1138,11 @@ h4,
     gap: 16px;
     height: 100%;
 
+    & p {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
     .cards-row {
       display: flex;
       flex-direction: row;
@@ -1170,11 +1175,6 @@ h4,
           align-items: flex-start;
           padding: 8px 4px;
           width: 100%;
-
-          & p {
-            font-size: 14px;
-            line-height: 14px;
-          }
         }
       }
     }
@@ -1386,6 +1386,11 @@ h4,
     flex-direction: column;
     gap: 16px;
     height: 100%;
+    
+    & p {
+        font-size: 14px;
+        line-height: 14px;
+      }
 
     .cards-row {
       display: flex;
@@ -1419,11 +1424,6 @@ h4,
           align-items: flex-start;
           padding: 8px 4px;
           width: 100%;
-
-          & p {
-            font-size: 14px;
-            line-height: 14px;
-          }
         }
       }
     }
