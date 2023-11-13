@@ -197,15 +197,43 @@ h4,
   flex-direction: column;
 
   .ML {
+    position: absolute;
+    /* margin: 50px; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 65vh;
+    /* flex-grow: 1; */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    /* background-size: contain; */
+    background-size: cover !important;
+    /* background-size: 100%; */
+    /* background-size: auto auto; */
+    /* border: solid var(--black); */
+    border-radius: 20px;
+    background: var(--white);
+    box-shadow: 5px 5px 30px var(--grey);
+    z-index: -1;
+  }
+  .LM {
+    position: absolute;
+    width: 10%;
+    height: 10%;
     margin: 8px;
     flex-grow: 1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    border: solid var(--black);
+    border-radius: 20px;
+    background: var(--white);
+    z-index: -2;
   }
 
-  .hide {
-    display: none;
+  .zindex {
+    z-index: -1;
   }
 }
 
@@ -1132,21 +1160,6 @@ h4,
 }
 
 /* /////////////////comp////////////////// */
-
-/* @media (768px < width <= 992px) {
-  .txt-card {
-    & h4 {
-      font-size: 14px;
-      line-height: 14px;
-      padding: 6px 0 8px 0;
-    }
-
-    & h5 {
-      font-size: 12px;
-      line-height: 12px;
-    }
-  }
-} */
 
 @media (992px < width <= 1200px) {
   .mobile {
